@@ -1,7 +1,13 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Random Button
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div class="flex flex-col items-center justify-center h-screen m-auto" x-data="{name: 'random user', recipe: 'Chocolate Chip Cookies'}">
+    <h1 class="text-4xl mb-2 text-white">Hello <span x-text="name"></span>!</h1>
+    <p class="text-2xl mb-2 text-white">Try this recipe: <span x-text="recipe"></span></p>
+
+    <button class="px-20 py-12 rounded-2xl bg-blue-900 text-white hover:bg-blue-800 font-medium text-2xl" x-on:click="fetchData">
+        Click Me!
+    </button>
+</div>
