@@ -9,6 +9,6 @@
     "@tailwindcss/vite": "^4.0.9"
   },
   "scripts": {
-    "build": ""
+    "build": "netlify build"
   }
 }
